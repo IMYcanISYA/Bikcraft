@@ -133,12 +133,13 @@ section {
 }
 
 ._button {
-  padding: 16px 32px;
+  padding: 15px 31px;
   font: 600 18px Poppins;
   text-transform: uppercase;
   color: var(--clr-bg);
   border-radius: 5px;
   background-color: var(--clr-accent);
+  text-align: center;
 }
 
 ._arrow-right {
@@ -387,6 +388,7 @@ section {
   margin-bottom: 20px;
 }
 .header-main__btn {
+  display: inline-block;
   padding: 16px 32px;
   font-size: 18px;
   font-weight: 600;
@@ -646,6 +648,10 @@ section {
   width: 100%;
   border-collapse: collapse;
 }
+.index-partners__table tbody {
+  width: 100%;
+  margin: 0 auto;
+}
 @media (max-width: 768px) {
   .index-partners__table {
     overflow-x: auto;
@@ -680,6 +686,7 @@ section {
   }
 }
 .index-partners__table td {
+  width: calc((100vw - 30px) / 4);
   text-align: center;
   padding: 32px 0px;
   margin: 0px 40px;
@@ -915,6 +922,7 @@ section {
   margin-right: 0.5em;
 }
 .item-gua__btn {
+  text-align: center;
   font: 600 18px Poppins;
   padding: 16px 32px;
   color: rgba(0, 0, 0, 0.8);
@@ -1122,6 +1130,7 @@ footer .block__text {
 }
 .item-bicycle__price {
   position: absolute;
+  z-index: 1;
   right: 0;
   top: 20px;
   padding: 8px 16px;
@@ -1533,6 +1542,8 @@ footer .block__text {
   }
 }
 .char-item__list {
+  position: relative;
+  z-index: 1;
   padding: 32px;
   border-radius: 5px;
   background-color: var(--clr-bg);
@@ -1837,6 +1848,11 @@ footer .block__text {
 .contacts-main {
   background-color: var(--clr-bg-light);
 }
+@media (max-width: 425px) {
+  .contacts-main {
+    padding-top: 150px;
+  }
+}
 .contacts-main .container {
   max-width: 1190px;
 }
@@ -1852,6 +1868,7 @@ footer .block__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 0px;
 }
 @media (max-width: 1024px) {
   .contacts-main__contacts {
